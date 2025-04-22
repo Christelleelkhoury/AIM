@@ -4,6 +4,7 @@ This repository contains all hands-on practical exercises for the **AI for Medic
 
 ## 📂 Repository Structure
 
+```bash
 /
 ├── environment.yml               # Conda environment definition
 ├── requirements.txt              # pip dependencies
@@ -18,7 +19,7 @@ This repository contains all hands-on practical exercises for the **AI for Medic
 │   └── metrics.py                # Clinical metric 
 ├── LICENSE
 └── README.md                     # This file
-
+```
 
 ## 🚀 Getting Started
 
