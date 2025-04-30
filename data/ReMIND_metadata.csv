@@ -1,0 +1,118 @@
+Case Number,Age,Sex,Race,Ethnicity,Laterality,Previous Craniotomy,WHO Grade,Histopathology
+1,41,Male,White,Not Hispanic,Right,No,3,Astrocytoma
+2,22,Female,White,Not Hispanic,Right,No,2,Astrocytoma
+3,30,Male,Asian,Not Hispanic,Left,No,2,Oligodendroglioma
+4,23,Male,White,Hispanic,Left,No,1,Dysembryoplastic neuroepithelial tumor
+5,27,Male,White,Not Hispanic,Right,No,Not assigned,Non-tumor epileptogenic brain parenchyma and gray matter
+6,58,Male,White,Not Hispanic,Left,No,2,Astrocytoma
+7,43,Female,White,Not Hispanic,Right,No,Not assigned,Non-tumor destructive chronic inflammatory lesion with abnormal vasculature
+8,44,Male,White,Not Hispanic,Right,Yes,3,Oligodendroglioma
+9,25,Male,White,Not Hispanic,Right,Yes,4,Astrocytoma
+10,41,Male,White,Not Hispanic,Left,No,2,Oligodendroglioma
+11,46,Female,White,Not Hispanic,Right,Yes,4,Astrocytoma
+12,31,Female,White,Not Hispanic,Left,Yes,3,Astrocytoma
+13,28,Male,White,Not Hispanic,Left,No,3,Astrocytoma
+14,66,Male,White,Not Hispanic,Right,No,Not assigned,Metastatic Carcinoma from Lung Adenocarcinoma
+15,50,Male,White,Not Hispanic,Left,Yes,4,Glioblastoma
+16,52,Female,White,Not Hispanic,Left,No,1,Papillary glioneuronal tumor
+17,32,Female,Asian,Not Hispanic,Left,No,2,Atypical meningioma
+18,69,Male,White,Not Hispanic,Left,Yes,2,Oligodendroglioma
+19,52,Female,White,Not Hispanic,Left,No,4,Glioblastoma
+20,56,Male,White,Not Hispanic,Left,Yes,4,Glioblastoma
+21,35,Male,White,Not Hispanic,Left,Yes,3,Astrocytoma
+22,61,Male,White,Not Hispanic,Right,Yes,3,Oligodendroglioma
+23,42,Male,White,Not Hispanic,Right,Yes,2,Oligodendroglioma
+24,45,Male,White,Not Hispanic,Left,Yes,3,Astrocytoma
+25,37,Female,White,Not Hispanic,Right,No,3,Oligodendroglioma
+26,27,Male,White,Not Hispanic,Right,No,2,Astrocytoma
+27,73,Female,White,Not Hispanic,Left,No,4,Glioblastoma
+28,31,Female,White,Not Hispanic,Right,No,4,Glioblastoma
+29,70,Male,White,Not Hispanic,Left,No,Not assigned,Metastatic Melanoma
+30,58,Male,White,Not Hispanic,Left,Yes,Not assigned,Metastatic Carcinoma from Lung Adenocarcinoma
+31,35,Female,Declined,Not Hispanic,Right,No,2,Glioblastoma
+32,31,Male,White,Not Hispanic,Right,No,4,Glioblastoma
+33,32,Male,White,Not Hispanic,Right,No,2,Oligodendroglioma
+34,54,Male,White,Not Hispanic,Right,Yes,4,Astrocytoma
+35,40,Female,White,Not Hispanic,Left,No,Not assigned,Demyelinating Lesions (Multiple Sclerosis Plaques)
+36,65,Female,White,Not Hispanic,Left,No,Not assigned,Metastatic Malignant Melanoma
+37,62,Male,Declined,Not Hispanic,Left,Yes,4,Glioblastoma
+38,74,Female,White,Not Hispanic,Left,No,Not assigned,Metastatic Renal Cell Carcinoma
+39,30,Male,White,Not Hispanic,Right,No,3,Oligodendroglioma
+40,36,Female,White,Not Hispanic,Right,No,2,Oligodendroglioma
+41,45,Male,White,Not Hispanic,Left,No,2,Astrocytoma
+42,48,Male,White,Not Hispanic,Right,No,Not assigned,Glial fibroma
+43,59,Male,White,Not Hispanic,Left,Yes,Not assigned,Primary diffuse large B-cell lymphoma
+44,52,Female,White,Not Hispanic,Left,No,4,Glioblastoma
+45,65,Female,White,Not Hispanic,Right,No,4,Glioblastoma
+46,59,Female,White,Not Hispanic,Left,Yes,4,Glioblastoma
+47,57,Female,White,Not Hispanic,Left,No,1,Dysembryoplastic neuroepithelial tumor
+48,38,Male,White,Declined,Right,Yes,2,Astrocytoma
+49,32,Male,White,Not Hispanic,Left,Yes,3,Oligodendroglioma
+50,61,Female,White,Not Hispanic,Right,Yes,4,Glioblastoma
+51,45,Female,White,Not Hispanic,Right,Yes,2,Oligodendroglioma
+52,26,Female,Declined,Hispanic,Right,No,2,Oligodendroglioma
+53,44,Male,White,Not Hispanic,Left,No,2,Oligodendroglioma
+54,51,Male,White,Not Hispanic,Left,No,3,Oligodendroglioma
+55,52,Male,White,Not Hispanic,Left,No,4,Glioblastoma
+56,21,Female,White,Not Hispanic,Left,No,2,Oligodendroglioma
+57,24,Male,White,Not Hispanic,Left,Yes,2,Glioneuronal tumor
+58,35,Female,White,Not Hispanic,Right,No,2,Astrocytoma
+59,28,Female,White,Not Hispanic,Left,No,3,Astrocytoma
+60,44,Male,Asian,Not Hispanic,Right,Yes,4,Astrocytoma
+61,67,Female,White,Not Hispanic,Right,Yes,Not assigned,Reactive brain and chronic inflammation
+62,48,Male,Asian,Not Hispanic,Right,Yes,3,Astrocytoma
+63,26,Male,White,Not Hispanic,Left,Yes,3,Astrocytoma
+64,50,Female,White,Not Hispanic,Right,No,Not assigned,Metastastic Carcinoma from Breast primary.
+65,62,Male,White,Not Hispanic,Left,No,2,Glioblastoma
+66,59,Female,White,Not Hispanic,Left,No,4,Glioblastoma
+67,72,Male,White,Not Hispanic,Right,No,4,Glioblastoma
+68,61,Female,White,Not Hispanic,Left,Yes,4,Glioblastoma
+69,61,Male,White,Not Hispanic,Right,No,4,Glioblastoma
+70,66,Male,White,Not Hispanic,Right,Yes,4,Glioblastoma
+71,62,Male,White,Not Hispanic,Right,No,4,Glioblastoma
+72,32,Male,Other,Hispanic,Left,No,Not assigned,"Brain parenchyma with necrosis, old hemorrhage, calcifications, foreign body 
+giant cell reaction to suture material, and chronic inflammation consistent 
+with effects of treatment"
+73,52,Female,White,Not Hispanic,Right,Yes,Not assigned,Metastatic Carcinoma from Breast primary
+74,27,Male,White,Not Hispanic,Right,No,3,Astrocytoma
+75,67,Male,White,Not Hispanic,Left,Yes,4,Glioblastoma
+76,43,Female,White,Not Hispanic,Right,No,4,Glioblastoma
+77,64,Female,White,Not Hispanic,Right,Yes,3,Astrocytoma
+78,42,Female,Other,Not Hispanic,Left,Yes,4,Astrocytoma
+79,35,Male,White,Not Hispanic,Left,Yes,3,Astrocytoma
+80,20,Female,White,Not Hispanic,Right,No,2,Astrocytoma
+81,27,Male,White,Not Hispanic,Right,Yes,2,Astrocytoma
+82,43,Female,White,Not Hispanic,Left,Yes,4,Glioblastoma
+83,50,Male,White,Not Hispanic,Left,Yes,4,Glioblastoma
+84,66,Male,White,Not Hispanic,Left,Yes,Not assigned,Metastatic carcinoma from lung primary
+85,61,Female,White,Not Hispanic,Left,Yes,2,Oligodendroglioma
+86,76,Male,White,Not Hispanic,Right,No,4,Glioblastoma
+87,30,Female,White,Not Hispanic,Left,Yes,2,Oligodendroglioma
+88,57,Female,White,Not Hispanic,Right,No,4,Glioblastoma
+89,52,Male,White,Not Hispanic,Right,Yes,4,Astrocytoma
+90,72,Female,White,Not Hispanic,Right,Yes,Not assigned,"Hypercellular brain tissue with scattered atypical cells, gliosis, and 
+exuberant leptomeningeal and perivascular inflammation"
+91,63,Male,White,Hispanic,Right,No,3,Astrocytoma
+92,23,Female,White,Not Hispanic,Left,Yes,2,Glioma with ependymal features
+93,65,Female,White,Not Hispanic,Right,Yes,4,Glioblastoma
+94,25,Female,White,Not Hispanic,Right,Yes,3,Astrocytoma
+95,54,Male,White,Not Hispanic,Left,No,4,Glioblastoma
+96,56,Male,White,Not Hispanic,Left,No,2,Astrocytoma
+97,24,Female,Asian,Not Hispanic,Right,No,4,Astrocytoma
+98,54,Female,White,Not Hispanic,Right,Yes,2,Oligodendroglioma
+99,57,Female,White,Not Hispanic,Left,No,Not assigned,"Metastastic Carcinoma, Poorly Differentiated"
+100,28,Female,White,Not Hispanic,Left,Yes,3,Astrocytoma
+101,45,Male,White,Not Hispanic,Right,No,2,Oligodendroglioma
+102,33,Female,White,Not Hispanic,Left,Yes,Not assigned,Low grade glioma
+103,57,Male,White,Not Hispanic,Right,No,Not assigned,Metastatic Adenocarcinoma from lung primary with likely peritumoral and intratumoral hemorrhage
+104,66,Female,White,Not Hispanic,Right,Yes,Not assigned,"Metastatic Carcinoma, poorly differentiated"
+105,49,Male,White,Not Hispanic,Left,No,4,Glioblastoma
+106,63,Female,White,Hispanic,Right,Yes,3,Oligodendroglioma
+107,42,Male,White,Not Hispanic,Left,Yes,2,Oligodendroglioma
+108,41,Female,White,Not Hispanic,Right,No,3,Astrocytoma
+109,51,Male,White,Not Hispanic,Left,No,2,Oligodendroglioma
+110,47,Male,White,Not Hispanic,Right,No,2,Oligodendroglioma
+111,42,Female,White,Not Hispanic,Left,No,3,Astrocytoma
+112,40,Female,Asian,Not Hispanic,Right,Yes,4,Astrocytoma
+113,50,Female,White,Not Hispanic,Right,Yes,4,Glioblastoma
+114,54,Male,White,Not Hispanic,Left,No,4,Glioblastoma

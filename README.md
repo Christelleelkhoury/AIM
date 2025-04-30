@@ -4,6 +4,7 @@ This repository contains all hands-on practical exercises for the **AI for Medic
 
 ## 📂 Repository Structure
 
+```bash
 /
 ├── environment.yml               # Conda environment definition
 ├── requirements.txt              # pip dependencies
@@ -11,14 +12,16 @@ This repository contains all hands-on practical exercises for the **AI for Medic
 │   ├── mimic_cxr/                # Chest X‑ray DICOMs + reports
 │   └── mimic_iv/                 # EHR CSV snippets
 ├── notebooks/                    # Jupyter notebooks by week
-│   ├── week1_introduction.ipynb
-│   └── ...
+│   ├── week1/
+│   └── week2/
+	│   ├── lesson1.ipynb         # Practical exercises for lesson #1 of week #2
+	│   └── lesson2.ipynb		  # Practical exercises for lesson #2 of week #2
 ├── utils/                        # Helper scripts
 │   ├── data_loader.py            # DICOM & CSV loading utilities
 │   └── metrics.py                # Clinical metric 
 ├── LICENSE
 └── README.md                     # This file
-
+```
 
 ## 🚀 Getting Started
 
