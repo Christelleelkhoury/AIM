@@ -6,21 +6,23 @@ This repository contains all hands-on practical exercises for the **AI for Medic
 
 ```bash
 /
-├── environment.yml               # Conda environment definition
-├── requirements.txt              # pip dependencies
-├── data/                         # Sample data subsets (placeholders)
-│   ├── mimic_cxr/                # Chest X‑ray DICOMs + reports
-│   └── mimic_iv/                 # EHR CSV snippets
-├── notebooks/                    # Jupyter notebooks by week
+├── environment.yml               			# Conda environment definition
+├── requirements.txt              			# pip dependencies
+├── data/                         			# Sample data subsets (placeholders)
+│   ├── ReMIND/ 							# Brain MRI DICOMs
+│   ├── PKG - ReMIND_NRRD_Seg_Sep_2023/		# Tumor segmentation in NRRD format
+│   ├── mimic_cxr/                			# Chest X‑ray DICOMs + reports
+│   └── mimic_iv/                 			# EHR CSV snippets
+├── notebooks/                    			# Jupyter notebooks by week
 │   ├── week1/
 │   └── week2/
-	│   ├── lesson1.ipynb         # Practical exercises for lesson #1 of week #2
-	│   └── lesson2.ipynb		  # Practical exercises for lesson #2 of week #2
-├── utils/                        # Helper scripts
-│   ├── data_loader.py            # DICOM & CSV loading utilities
-│   └── metrics.py                # Clinical metric 
+	│   ├── lesson1.ipynb         			# Practical exercises for lesson #1 of week #2
+	│   └── lesson2.ipynb		  			# Practical exercises for lesson #2 of week #2
+├── utils/                        			# Helper scripts
+│   ├── data_loader.py            			# DICOM & CSV loading utilities
+│   └── metrics.py                			# Clinical metric 
 ├── LICENSE
-└── README.md                     # This file
+└── README.md                     			# This file
 ```
 
 ## 🚀 Getting Started
@@ -36,7 +38,7 @@ cd AIM
 Using Conda (recommended)
 ```bash
 conda env create -f environment.yml
-conda activate medical-ai
+conda activate aim-course
 ```
 Using pip
 ```bash
@@ -46,10 +48,6 @@ pip install -r requirements.txt
 ### Step 3: Prepare Sample Data
 - MIMIC-CXR: Place a subset of chest X-ray DICOM files in data/mimic_cxr/.
 - MIMIC-IV: Place matching clinical CSV files in data/mimic_iv/.
-
-Filename structure:
-- Images: subject_<ID>.dcm
-- CSV: subject_<ID>.csv
 
 
 ### Step 4: Launch JupyterLab OR Google Colab 
