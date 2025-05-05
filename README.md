@@ -46,8 +46,8 @@ pip install -r requirements.txt
 ```
 
 ### Step 3: Prepare Sample Data
-- MIMIC-CXR: Place a subset of chest X-ray DICOM files in data/mimic_cxr/.
-- MIMIC-IV: Place matching clinical CSV files in data/mimic_iv/.
+
+
 
 
 ### Step 4: Launch JupyterLab OR Google Colab 
