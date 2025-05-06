@@ -78,6 +78,7 @@ dependencies:
   - pooch=1.8.2=pyhd8ed1ab_0
   - pthread-stubs=0.4=hd74edd7_1002
   - pycparser=2.22=pyhd8ed1ab_0
+  - pydicom=2.4.4=pyhd8ed1ab_0
   - pyparsing=3.1.4=pyhd8ed1ab_0
   - pysocks=1.7.1=pyha2e5f31_6
   - python=3.8.20=h7d35d02_2_cpython
@@ -124,6 +125,7 @@ dependencies:
       - debugpy==1.8.14
       - decorator==5.2.1
       - defusedxml==0.7.1
+      - dicom2nifti==2.6.0
       - docopt==0.6.2
       - exceptiongroup==1.2.2
       - executing==2.2.0
@@ -182,13 +184,13 @@ dependencies:
       - psutil==7.0.0
       - ptyprocess==0.7.0
       - pure-eval==0.2.3
-      - pydicom==2.4.4
       - pygments==2.19.1
       - pykwalify==1.8.0
       - pynndescent==0.5.13
       - pynrrd==1.1.3
       - pyradiomics==3.0.1
       - python-dateutil==2.9.0.post0
+      - python-gdcm==3.0.24.1
       - python-json-logger==3.3.0
       - pytz==2025.2
       - pywavelets==1.4.1
