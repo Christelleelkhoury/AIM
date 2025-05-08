@@ -35,10 +35,48 @@ def convert_np_to_sitk(pixel_array, header):
     sitk_image.SetDirection(np.reshape(header['space directions'], -1))
     return sitk_image
 
-def resample_mask_to_image(mask, image, interpolator=sitk.sitkNearestNeighbor):
-    """Resample the segmentation mask to match the reference image (e.g., T1w)"""
-    resample = sitk.ResampleImageFilter()
-    resample.SetReferenceImage(image)
-    resample.SetInterpolator(interpolator)
-    resample.SetTransform(sitk.Transform())  # Identity transform
-    return resample.Execute(mask)
+def reconstruct_mask_in_image_space(mask_sitk, image_sitk):
+    """
+    Reconstruct the segmentation mask in the original image space.
+
+    Parameters:
+    - mask_sitk: SimpleITK image (cropped mask)
+    - image_sitk: SimpleITK image (original image)
+
+    Returns:
+    - full_mask: a NumPy array with the shape of image_sitk and the mask embedded in the correct location
+    """
+    # Get index offset of mask origin in image space
+    mask_start_index = image_sitk.TransformPhysicalPointToIndex(mask_sitk.GetOrigin())
+    print(f"[INFO] Loaded mask with size: {mask_sitk.GetSize()}")
+
+    # Convert mask to NumPy array
+    mask_array = sitk.GetArrayFromImage(mask_sitk)
+    dx, dy, dz = mask_sitk.GetSize()
+
+    # Prepare full-size array
+    image_shape = image_sitk.GetSize()
+    full_mask = np.zeros(image_shape, dtype=mask_array.dtype)
+
+    # Compute insertion coordinates
+    x, y, z = mask_start_index
+
+    # Compute slice bounds and clip if necessary
+    z_end = min(z + dz, image_shape[2])
+    y_end = min(y + dy, image_shape[1])
+    x_end = min(x + dx, image_shape[0])
+
+    # Corresponding bounds in the mask
+    mask_z_end = z_end - z
+    mask_y_end = y_end - y
+    mask_x_end = x_end - x
+
+    full_mask[x:x_end, y:y_end, z:z_end] = mask_array.transpose(2,1,0)[:mask_x_end, :mask_y_end, :mask_z_end]
+
+    # From np to SITK
+    full_mask_sitk = sitk.GetImageFromArray(full_mask.transpose(2,1,0))
+    full_mask_sitk.SetSpacing(image_sitk.GetSpacing())
+    full_mask_sitk.SetOrigin(image_sitk.GetOrigin())
+    full_mask_sitk.SetDirection(image_sitk.GetDirection())
+
+    return full_mask_sitk
