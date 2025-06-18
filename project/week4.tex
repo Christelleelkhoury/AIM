@@ -1,0 +1,70 @@
+\subsection{Project - AI for Medical Diagnosis and Prediction | Week #4: Tumor Classification and Segmentation}
+
+\subsubsection*{Your task}
+This week, you will continue the analysis pipeline from Week #3 and add a **segmentation module** to your framework. You will then revisit classification, this time with Convolutional Neural Networks (CNN). The goal is to compare the performance of CNNs with previously trained machine learning models. 
+
+In addition, you will train a segmentation model with a classification head. The objective is to see if the segmentation of relevant areas helps for pathology detection.
+
+In addition, this week will serve as your **MidTerm Evaluation**. You will deliver a report combining insights and results from:
+\begin{itemize}
+  \item Week 2: Feature extraction and data exploration.
+  \item Week 3: Pathology classification using radiomics and machine learning.
+  \item Week 4: Pathology classification and segmentation using CNNs.
+\end{itemize}
+
+\subsubsection*{Instructions}
+\begin{enumerate}
+  \item \textbf{Classification Module.}
+    \begin{itemize}
+      \item Load the dataset using the same train, validation and test splits as during the previous week.
+      \item Implement a PyTorch Dataset class for classification.
+      \item Train a 2D CNN (e.g., ResNet18, EfficientNet-B0).
+      \item Evaluate performance using:
+        \begin{itemize}
+          \item Accuracy score
+          \item F1-score
+          \item ROC curve and AUC 
+          \item Precision and Recall
+        \end{itemize}
+      \item Save the model.
+    \end{itemize}
+
+  \item \textbf{Segmentation-Guided Classification.}
+    \begin{itemize}
+      \item Implement a PyTorch Dataset class for segmentation.
+      \item Train a 2D segmentation model (e.g., UNet, FCN) or re-use a pre-trained Foundation Model (e.g., MedSAM).
+      \item Add a classification head on top of the segmentation model. 
+      \item Evaluate segmentation performance using:
+        \begin{itemize}
+          \item Dice Similarity Coefficient (DSC)
+          \item Intersection-over-Union (IoU)
+          \item Precision 
+        \end{itemize}
+      \item Evaluate classification performance using the same metrics as above. 
+      \item Save the best model.
+      \item Compare the performance to your previous classifier.
+    \end{itemize}
+
+  \item \textbf{MidTerm Evaluation Report.}
+    \begin{itemize}
+      \item Write a concise (max 4 pages) report including:
+        \begin{itemize}
+          \item Description of dataset and preprocessing pipeline.
+          \item Comparison of machine learning models, CNN and classification results.
+          \item Plots and tables of metrics and sample outputs.
+          \item Reflections: What worked? What didn’t? What would you try next?
+        \end{itemize}
+      \item Deliver the report as a PDF along with your notebook.
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection*{Evaluation Questions}
+\begin{enumerate}
+  \item How can segmentation outputs improve classification tasks?
+  \item What are the trade-offs between pixel-level and image-level supervision?
+  \item What metric would you use to compare two segmentation models, and why?
+  \item If your segmentation model produces false positives, how might that affect downstream classification?
+\end{enumerate}
+
+\subsubsection*{Guidelines}
+[STANDARD GUIDELINES TO BE ADDED BY LD IN ULTRA - DO NOT AMEND]
