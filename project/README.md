@@ -25,7 +25,6 @@ Alternatively, a code cell in the first notebook will download the required data
 This project is divided into weekly tasks aligned with the lessons:
 
 ### Week 2: Explore, Clean, and Organize the Data
-
 - Load and examine the dataset  
 - Clean metadata (remove NaNs, anonymize DICOMs if needed)  
 - Extract features from images and/or reports  
@@ -34,33 +33,30 @@ This project is divided into weekly tasks aligned with the lessons:
 - Select relevant features and split the dataset (train/val/test)
 
 ### Week 3: Machine Learning Models
-
-- Train models for disease diagnosis  
-- Optimize hyperparameters with cross-validation  
-- Evaluate models with appropriate metrics  
-- Write a benchmark analysis
+- Build a patient-level split and feature matrix  
+- Train LR, RF, and KNN using a **Pipeline(StandardScaler → SMOTE → classifier)**  
+- Tune with **RandomizedSearchCV** (StratifiedKFold, scoring='recall'); save best pipelines  
+- Evaluate on the test set (classification report, ROC/DET, confusion matrix) and write a brief benchmark
 
 ### Week 4: Deep Learning Models
-
-- Train a CNN on chest X-ray images  
-- Optimize hyperparameters  
-- Evaluate performance using proper metrics
+- Prepare image loaders (patient-level splits, train/val/test)  
+- Fine-tune **EfficientNet-B4** (2-class head); save best by validation accuracy  
+- Train a **U-Net (multitask)** with segmentation + classification head (if masks available)  
+- Evaluate on the test set and plot ROC; optional overlay with Week-3 baselines
 
 ### Week 5: Fairness and Uncertainty
-
-- Use a pre-trained model (e.g., TorchXRayVision) to segment anatomical structures  
-- Evaluate model performance with segmentation masks  
-- Investigate Clever Hans effects and retrain if necessary  
-- Compute fairness metrics using demographic data
+- Derive subgroup proxies from metadata (e.g., **projection** and **is_portable**)  
+- Report per-subgroup AUC/F1/recall/precision/accuracy and visualize prevalence  
+- Apply **targeted oversampling** to underperforming subgroups, retrain, and compare  
+- Generate Grad-CAM++ sanity checks; weighted-loss scaffold prepared (weights computed, not yet applied)
 
 ### Week 6: Foundation Models
+- Build multi-modal inputs (image + lightweight tabular proxies)  
+- Train fusion baselines from scratch (concatenation MLP; cross-attention variant)  
+- Adapt a foundation image model (**MedCLIP**): linear probe, partial fine-tuning, and LoRA  
+- Evaluate (AUC/ACC/F1), aggregate a results table, and plot comparative bars  
+- Optional utility to load Week-4 EfficientNet-B4 for side-by-side comparison
 
-- Extract features using GLORIA or similar foundation models  
-- Train a linear probe for disease diagnosis  
-- Compare performance with:  
-  - Machine learning models  
-  - CNNs (with/without masking)  
-  - Foundation model features
 
 ---
 
